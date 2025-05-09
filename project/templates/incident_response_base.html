@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <title>Incident Response</title>
+</head>
+<body class="container">
+
+    <header>
+        <nav>
+            <ul>
+                <li><strong>Incident Response</strong></li>
+            </ul>
+            <ul>
+                <li>Incidents</li>
+                <li>Requests</li>
+                <li>Resources</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="grid">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+
+    </main>
+
+    {% comment %} <footer>
+        <p>Copyright</p>
+    </footer> {% endcomment %}
+    
+</body>
+</html>
