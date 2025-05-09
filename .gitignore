@@ -38,5 +38,3 @@ htmlcov/
 .pyre/
 ruff_cache/
 
-
-# django specifc
