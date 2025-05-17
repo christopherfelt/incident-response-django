@@ -14,7 +14,7 @@
         <h1 class="text-center">Incidents</h1>
         <div>
             {% for incident in incidents %}
-                <article>{{ incident.name }}</article>
+                <article> <a href="{% url 'incident-detail' incident.pk %}">{{ incident.name }}</a></article>
             {% empty %}
                 <article>No incidents are available.</article>
             {% endfor %}
